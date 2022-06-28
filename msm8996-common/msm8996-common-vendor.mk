@@ -98,7 +98,6 @@ PRODUCT_PACKAGES += \
     VerizonUnifiedSettings
 PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/bin/thermalserviced:$(TARGET_COPY_OUT_SYSTEM)/bin/thermalserviced \
-    vendor/lge/msm8996-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/lge/msm8996-common/proprietary/etc/cne/wqeclient/profile1.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/wqeclient/profile1.xml \
     vendor/lge/msm8996-common/proprietary/etc/cne/wqeclient/profile2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/wqeclient/profile2.xml \
     vendor/lge/msm8996-common/proprietary/etc/cne/wqeclient/profile3.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/wqeclient/profile3.xml \
@@ -107,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/etc/cne/wqeclient/profile6.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/wqeclient/profile6.xml \
     vendor/lge/msm8996-common/proprietary/etc/cne/wqeclient/profile7.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/wqeclient/profile7.xml \
     vendor/lge/msm8996-common/proprietary/etc/init/thermalservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/thermalservice.rc \
-    vendor/lge/msm8996-common/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
     vendor/lge/msm8996-common/proprietary/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/cneapiclient.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.xml \
@@ -116,16 +114,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/telephonyservice.xml \
-    vendor/lge/msm8996-common/proprietary/etc/wfdconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfig.xml \
-    vendor/lge/msm8996-common/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
     vendor/lge/msm8996-common/proprietary/framework/cneapiclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/cneapiclient.jar \
 		vendor/lge/msm8996-common/proprietary/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/audiosphere.jar \
     vendor/lge/msm8996-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/lge/msm8996-common/proprietary/framework/com.quicinc.cne.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.jar \
     vendor/lge/msm8996-common/proprietary/framework/vendor.lge.hardware.thermal-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.thermal-V1.0-java.jar \
     vendor/lge/msm8996-common/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/lge/msm8996-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/lge/msm8996-common/proprietary/lib/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib/extractors/libmmparserextractor.so \
     vendor/lge/msm8996-common/proprietary/lib/lib-imscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imscamera.so \
     vendor/lge/msm8996-common/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so \
     vendor/lge/msm8996-common/proprietary/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtextutils.so \
@@ -142,23 +136,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/librcc.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libsd_sdk_display.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsd_sdk_display.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-apis.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdcodecv4l2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcodecv4l2.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcommonutils.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdconfigutils.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmminterface.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsink.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdmmsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsrc.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdnative.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdrtsp.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdservice.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsm.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcinterface.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsink.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsinkinterface.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrc.so \
-    vendor/lge/msm8996-common/proprietary/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrcinterface.so \
     vendor/lge/msm8996-common/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:$(TARGET_COPY_OUT_SYSTEM)/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
     vendor/lge/msm8996-common/proprietary/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so:$(TARGET_COPY_OUT_SYSTEM)/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so \
     vendor/lge/msm8996-common/proprietary/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.color@1.0.so \
@@ -185,8 +162,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-apis.so \
     vendor/lge/msm8996-common/proprietary/lib64/libthermalcallback.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libthermalcallback.so \
     vendor/lge/msm8996-common/proprietary/lib64/libthermalservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libthermalservice.so \
-    vendor/lge/msm8996-common/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
-    vendor/lge/msm8996-common/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
     vendor/lge/msm8996-common/proprietary/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.color@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.postproc@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib64/vendor.lge.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.thermal@1.0.so \
@@ -222,7 +197,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/lge/msm8996-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/lge/msm8996-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/lge/msm8996-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/lge/msm8996-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/lge/msm8996-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -254,7 +228,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/lge/msm8996-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/lge/msm8996-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
-    vendor/lge/msm8996-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/lge/msm8996-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/lge/msm8996-common/proprietary/vendor/etc/init/vendor.lge.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.thermal@1.0-service.rc \
     vendor/lge/msm8996-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@1.0-service.rc \
@@ -299,7 +272,6 @@ PRODUCT_COPY_FILES += \
 		vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/lge/msm8996-common/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
     vendor/lge/msm8996-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.api@1.0.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.api@1.1.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@1.0.so \
@@ -411,13 +383,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libsymphonypower-1.1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower-1.1.1.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_fd_skel.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_hvx_skel.so \
@@ -649,6 +614,49 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/lge/msm8996-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
+#WifiDisplay // system
+PRODUCT_COPY_FILES += \
+    vendor/lge/msm8996-common/proprietary/bin/wfd/wfdservice:system/bin/wfdservice \
+    vendor/lge/msm8996-common/proprietary/etc/init/wfd/wfdservice.rc:system/etc/init/wfdservice.rc \
+    vendor/lge/msm8996-common/proprietary/etc/wfd/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/lge/msm8996-common/proprietary/etc/wfd/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdclient.so:system/lib/libwfdclient.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdnative.so:system/lib/libwfdnative.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/lge/msm8996-common/proprietary/lib/wfd/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
+    vendor/lge/msm8996-common/proprietary/lib64/wfd/libwfdclient.so:system/lib64/libwfdclient.so \
+    vendor/lge/msm8996-common/proprietary/lib64/wfd/libwfdnative.so:system/lib64/libwfdnative.so \
+
+#WifiDisplay // vendor
+PRODUCT_COPY_FILES += \
+    vendor/lge/msm8996-common/proprietary/vendor/bin/wfd/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+    vendor/lge/msm8996-common/proprietary/vendor/etc/init/wfd/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/wfd/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/wfd/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/wfd/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/wfd/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/wfd/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/wfd/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/wfd/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
+
+#WifiDisplay
+PRODUCT_PACKAGES += \
+    WfdService \
+    WfdCommon \
+
 PRODUCT_PACKAGES += \
     gatekeeper.msm8996 \
     keystore.msm8996 \
@@ -664,9 +672,7 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     QtiTelephonyService \
     CNEService \
-    WfdService \
     qcrilmsgtunnel \
     QtiTelephonyServicelibrary \
-    WfdCommon \
     qcrilhook \
     qti-telephony-common
