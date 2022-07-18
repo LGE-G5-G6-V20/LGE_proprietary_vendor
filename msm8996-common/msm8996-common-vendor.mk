@@ -579,9 +579,12 @@ PRODUCT_COPY_FILES += \
 
 		#Media
 		PRODUCT_COPY_FILES += \
-		    vendor/lge/msm8996-common/proprietary/lib/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib/extractors/libmmparserextractor.so \
+		    vendor/lge/msm8996-common/proprietary/lib/media/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
+		    vendor/lge/msm8996-common/proprietary/lib64/media/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
 		    vendor/lge/msm8996-common/proprietary/lib/media/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
 		    vendor/lge/msm8996-common/proprietary/lib/media/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
+		    vendor/lge/msm8996-common/proprietary/lib/media/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+		    vendor/lge/msm8996-common/proprietary/lib/media/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
 		    vendor/lge/msm8996-common/proprietary/lib/media/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libI420colorconvert.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
@@ -597,31 +600,17 @@ PRODUCT_COPY_FILES += \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Dec.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
+		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVdec.so \
+		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVencMpeg4.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
+		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
+		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
+		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
+		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
 		    vendor/lge/msm8996-common/proprietary/vendor/lib/media/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib/media/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so
-
-				#Media lib64
-				PRODUCT_COPY_FILES += \
-				vendor/lge/msm8996-common/proprietary/lib64/media/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
-		  	vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libI420colorconvert.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacDec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDecSw.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxAmrDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrDec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrwbplusDec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDecSw.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxEvrcDec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxG711Dec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
-				vendor/lge/msm8996-common/proprietary/vendor/lib64/media/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so
 
 #WifiDisplay // system
 PRODUCT_COPY_FILES += \
