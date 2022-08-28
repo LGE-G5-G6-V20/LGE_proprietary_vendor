@@ -277,10 +277,10 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsdm-disp-vndapis.so"],
+			srcs: ["proprietary/vendor/lib/sdm/libsdm-disp-vndapis.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
+			srcs: ["proprietary/vendor/lib64/sdm/libsdm-disp-vndapis.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -390,6 +390,12 @@ dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "lge",
 	jars: ["proprietary/framework/QtiTelephonyServicelibrary.jar"],
+}
+
+dex_import {
+	name: "com.qti.snapdragon.sdk.display",
+	owner: "lge",
+	jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
 }
 
 dex_import {
