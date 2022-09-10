@@ -466,8 +466,8 @@ PRODUCT_COPY_FILES += \
     
 #Display//Vulkan
 PRODUCT_COPY_FILES += \
-vendor/lge/msm8996-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
-vendor/lge/msm8996-common/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so
+vendor/lge/msm8996-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vulkan.adreno.so \
+vendor/lge/msm8996-common/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vulkan.adreno.so
 
 #Display//Postprocessing
 PRODUCT_COPY_FILES += \
